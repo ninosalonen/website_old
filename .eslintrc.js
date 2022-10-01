@@ -19,6 +19,11 @@ module.exports = {
 		sourceType: 'module',
 	},
 	plugins: ['react', '@typescript-eslint'],
+	settings: {
+		react: {
+			version: '16.2.0',
+		},
+	},
 	rules: {
 		indent: ['error', 'tab'],
 		'linebreak-style': ['error', 'unix'],
