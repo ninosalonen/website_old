@@ -9,7 +9,6 @@ const Home: NextPage<CmsPropsType> = (props: CmsPropsType) => {
 	return (
 		<>
 			<Head>
-				<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 				<title>Nino Salonen</title>
 				<meta
 					name="description"

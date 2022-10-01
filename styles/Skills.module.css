@@ -3,7 +3,6 @@
   --list-max-width: 80vw;
   padding: var(--area-spacing);
   background-color: var(--bg-light);
-  position: relative;
 }
 
 .skills__description {
@@ -19,22 +18,23 @@
   gap: 3rem 5rem;
 }
 
-.moreInfo__backdrop, .moreInfo__content {
+.moreInfo__backdrop{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.moreInfo__backdrop {
   background-color: black;
   opacity: 0.9;
   height: 100%;
   width: 100%;
+  z-index: 1;
 }
 
-
 .moreInfo__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: var(--bg-light);
   border-radius: var(--border-radius);
 
@@ -43,6 +43,7 @@
   border: 2px solid var(--primary-dark);
   padding: 2.5rem 3rem;
   word-wrap: break-word;
+  z-index: 2;
 }
 
 .moreInfo__content > h4 {
@@ -76,6 +77,7 @@
   color: inherit;
   padding: 0.5rem;
   font-size: inherit;
+  transition: all 0.1s ease-in-out;
 }
 
 .skill__button:hover, .skill__button:focus {
