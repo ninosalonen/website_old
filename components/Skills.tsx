@@ -17,11 +17,9 @@ const Skills = ({ aboutSkills, skillsLists }: PropsType) => {
 
 	const sortedSkillsLists = sortArray(skillsLists)
 	return (
-		<div className={styles.skills} data-aos="fade-in">
-			<h2 data-aos="fade-up">My skills</h2>
-			<p className={styles.skills__description} data-aos="fade-up">
-				{aboutSkills}
-			</p>
+		<div className={styles.skills}>
+			<h2>My skills</h2>
+			<p className={styles.skills__description}>{aboutSkills}</p>
 			<div className={styles.skills__lists}>
 				{sortedSkillsLists.map((skillList) => (
 					<SkillList

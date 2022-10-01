@@ -9,7 +9,6 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
-		"aos": "^2.3.4",
 		"contentful": "^9.2.4",
 		"next": "12.3.1",
 		"react": "18.2.0",

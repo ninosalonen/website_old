@@ -18,8 +18,6 @@ const WorkCard = ({ item }: PropsType) => {
 			className={`${styles.workCard} ${
 				item.isDark ? styles.dark : styles.light
 			}`}
-			data-aos="zoom-in"
-			data-aos-duration="600"
 		>
 			<h3>{item.title}</h3>
 			<p className={styles.workCard__description}>{item.description}</p>
