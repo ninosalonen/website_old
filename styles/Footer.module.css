@@ -6,11 +6,13 @@
   justify-content: space-evenly;
   gap: 1rem;
   overflow: hidden;
-  color: var(--primary-light);
+  color: var(--primary-dark);
+  background-color: var(--bg-light);
 }
 
 .footer__text {
   margin: 0;
+  font-size: var(--p-font);
 }
 
 .footer__svgContainer {
@@ -20,7 +22,7 @@
 
 .svgLink {
   transition: transform 0.1s ease-in-out;
-  fill: var(--primary-light)
+  fill: var(--primary-dark)
 }
 
 .svgLink:hover, .svgLink:focus {

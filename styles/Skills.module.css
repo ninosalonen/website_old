@@ -6,6 +6,7 @@
 }
 
 .skills__description {
+  font-size: var(--p-font);
   opacity: var(--opacity);
 }
 
@@ -31,7 +32,7 @@
 }
 
 .moreInfo__content {
-  position: absolute;
+  position: sticky;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

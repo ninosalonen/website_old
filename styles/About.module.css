@@ -19,6 +19,7 @@
 
 .about__text > p {
   opacity: var(--opacity);
+  font-size: var(--p-font);
 }
 
 @media screen and (min-width: 800px) {

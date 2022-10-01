@@ -31,7 +31,7 @@
 }
 
 .workCard__description {
-  font-size: var(--small-font);
+  font-size: var(--p-font);
   padding: 0rem 2rem;
   opacity: var(--opacity);
 }

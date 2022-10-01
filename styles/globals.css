@@ -21,9 +21,9 @@ body {
   --primary-light: white;
   --bg-dark: black;
   --bg-light: #F9F7F5;
-  --opacity: 0.75;
+  --opacity: 0.85;
   --area-spacing: 6rem 1rem;
-  --small-font: calc(0.85rem + 0.6vw);
+  --p-font: calc(0.85rem + 0.6vw);
   background-color: var(--bg-dark);
   color: var(--primary-dark);
   font-family: 'Space Grotesk', sans-serif;
@@ -31,7 +31,7 @@ body {
   line-height: 1.5;
   font-size: calc(1rem + 0.6vw);
   text-align: center;
-  transform: translateY(-1%);
+  transform: translateY(0%);
 }
 
 h1, h2, h3 {
