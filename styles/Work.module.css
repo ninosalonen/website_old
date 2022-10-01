@@ -1,0 +1,36 @@
+.work {
+  background-color: var(--bg-dark);
+  color: var(--primary-light);
+  padding: var(--area-spacing);
+}
+
+
+.work__cards {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(calc(11rem + 14vw), 1fr));
+  gap: 1rem;
+}
+
+.workCard {
+  border-radius: var(--border-radius);
+  padding: 3rem 0rem;
+}
+
+.workCard.dark {
+  color: var(--primary-light);
+}
+
+.workCard.light {
+  color: var(--primary-dark);
+}
+
+.workCard:hover, .workCard:focus {
+  scale: 1.02
+}
+
+.workCard__description {
+  opacity: var(--opacity);
+  font-size: var(--small-font);
+  padding: 0rem 2rem;
+}
