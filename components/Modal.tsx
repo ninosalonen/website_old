@@ -11,6 +11,8 @@ const Modal = ({ moreInfo, setMoreInfo }: PropsType) => {
 
 	useEffect(() => {
 		ref.current?.focus()
+		moreInfo.length > 0 && document.body.classList.add('noscroll')
+		moreInfo.length <= 0 && document.body.classList.remove('noscroll')
 	}, [moreInfo])
 
 	return (
