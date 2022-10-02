@@ -11,8 +11,6 @@ const Modal = ({ moreInfo, setMoreInfo }: PropsType) => {
 
 	useEffect(() => {
 		ref.current?.focus()
-		moreInfo.length > 0 && (document.body.style.overflow = 'hidden')
-		moreInfo.length <= 0 && (document.body.style.overflow = 'unset')
 	}, [moreInfo])
 
 	return (
