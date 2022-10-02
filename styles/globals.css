@@ -31,7 +31,7 @@ body {
   line-height: 1.5;
   font-size: calc(1rem + 0.6vw);
   text-align: center;
-  transform: translateY(0%);
+  position: relative;
 }
 
 h1, h2, h3 {

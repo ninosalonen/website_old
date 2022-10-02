@@ -15,10 +15,10 @@ const NotFound = () => {
 				height: '100vh',
 			}}
 		>
-			<h1>Page not found :(</h1>
+			<h2>there are no secret pages...</h2>
 
 			<h2>
-				<Link href={'/'}>back to home</Link>
+				<Link href={'/'}>go home 👈🏻</Link>
 			</h2>
 		</div>
 	)

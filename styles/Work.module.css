@@ -14,8 +14,13 @@
 
 .workCard {
   border-radius: var(--border-radius);
-  padding: 3rem 0rem;
+  padding: 3rem 1rem;
   transition: transform 0.1s ease-in-out
+}
+
+.workCard__description {
+  font-size: var(--p-font);
+  opacity: var(--opacity);
 }
 
 .workCard.dark {
@@ -28,10 +33,4 @@
 
 .workCard:hover, .workCard:focus {
   transform: scale(1.02);
-}
-
-.workCard__description {
-  font-size: var(--p-font);
-  padding: 0rem 2rem;
-  opacity: var(--opacity);
 }

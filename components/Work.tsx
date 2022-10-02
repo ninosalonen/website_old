@@ -11,7 +11,7 @@ type PropsType = {
 const Work = ({ work, aboutWork }: PropsType) => {
 	return (
 		<div className={styles.work}>
-			<h2 className={styles.work__header}>My projects</h2>
+			<h2>My projects</h2>
 			<p className={styles.workCard__description}>{aboutWork}</p>
 			<div className={styles.work__cards}>
 				{work.map((item) => (

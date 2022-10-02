@@ -16,8 +16,9 @@
 }
 
 .footer__svgContainer {
-  display: grid;
-  grid-template-columns: repeat(3, 4rem)
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
 }
 
 .svgLink {

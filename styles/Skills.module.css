@@ -19,71 +19,22 @@
   gap: 3rem 5rem;
 }
 
-.moreInfo__backdrop{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: black;
-  opacity: 0.9;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-}
-
-.moreInfo__content {
-  position: sticky;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: var(--bg-light);
+.skill__button {
+  width: var(--list-width);
+  max-width: var(--list-max-width);
   border-radius: var(--border-radius);
-
-  /*custom*/
-  width: calc(145px + 40vw);
   border: 2px solid var(--primary-dark);
-  padding: 2.5rem 3rem;
-  word-wrap: break-word;
-  z-index: 2;
-}
-
-.moreInfo__content > h4 {
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-
-.moreInfo__x {
-  padding: 0;
-  position: absolute;
-  width: min-content;
-  top: 1rem;
-  right: 1rem;
-  color: var(--primary-dark);
-  font-size: 1.5rem;
-}
-
-.moreInfo__x:hover {
-  cursor: pointer;
+  padding: 0.5rem;
+  font-size: inherit;
+  transition: all 0.1s ease-in-out;
 }
 
 .skill:not(.skill:first-child) {
   margin-top: 1rem
 }
 
-.skill__button {
-  width: var(--list-width);
-  max-width: var(--list-max-width);
-  border-radius: var(--border-radius);
-  border: 2px solid var(--primary-dark);
-  color: inherit;
-  padding: 0.5rem;
-  font-size: inherit;
-  transition: all 0.1s ease-in-out;
-}
-
 .skill__button:hover, .skill__button:focus {
   color: var(--primary-light);
   background-color: var(--bg-dark);
   cursor: pointer;
-  opacity: 1;
 }

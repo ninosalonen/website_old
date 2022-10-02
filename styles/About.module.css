@@ -2,7 +2,6 @@
   display: grid;
   grid-template-rows: calc(10rem + 50vw) min-content;
   align-items: center;
-  align-content: center;
   background-color: var(--bg-dark);
   color: var(--primary-light);
 }
@@ -29,6 +28,6 @@
     overflow: hidden;
   }
   .about__text {
-    padding: 9rem 3rem;
+    padding: 0rem 3rem;
   }
 }

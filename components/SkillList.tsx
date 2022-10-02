@@ -14,8 +14,8 @@ type PropsType = {
 
 const SkillList = ({ skillList, setMoreInfo }: PropsType) => {
 	return (
-		<div key={skillList.heading}>
-			<h3 className={styles.skillList__heading}>{skillList.heading}</h3>
+		<div>
+			<h3>{skillList.heading}</h3>
 			<ul>
 				{skillList.list.map((skill) => (
 					<SkillItem
