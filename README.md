@@ -1,1 +1,1 @@
-[Go to site](https://ninosalonen-github-f5oqxbqha-ninosalonen.vercel.app/)
+[Go to site](https://ninosalonen-github-io.vercel.app/)
