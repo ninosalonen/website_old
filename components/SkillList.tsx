@@ -1,6 +1,5 @@
 import React from 'react'
 import SkillItem from './SkillItem'
-import styles from '../styles/Skills.module.css'
 
 type SkillListType = {
 	heading: string
