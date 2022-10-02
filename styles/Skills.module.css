@@ -26,6 +26,7 @@
   border: 2px solid var(--primary-dark);
   padding: 0.5rem;
   font-size: inherit;
+  color: inherit;
   transition: all 0.1s ease-in-out;
 }
 
