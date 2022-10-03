@@ -11,10 +11,6 @@ html {
   background-color: black;
 }
 
-body.noscroll {
-  overflow: hidden;
-}
-
 html:focus-within {
   scroll-behavior: smooth;
 }

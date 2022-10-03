@@ -11,8 +11,12 @@ const Modal = ({ moreInfo, setMoreInfo }: PropsType) => {
 
 	useEffect(() => {
 		ref.current?.focus()
-		moreInfo.length > 0 && document.body.classList.add('noscroll')
-		moreInfo.length <= 0 && document.body.classList.remove('noscroll')
+
+		const onScroll = () => {
+			if (moreInfo.length > 0) setMoreInfo('')
+		}
+		window.addEventListener('scroll', onScroll, { passive: true })
+		return () => window.removeEventListener('scroll', onScroll)
 	}, [moreInfo])
 
 	return (
