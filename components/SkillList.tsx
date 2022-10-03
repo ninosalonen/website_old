@@ -1,5 +1,6 @@
 import React from 'react'
 import SkillItem from './SkillItem'
+import styles from '../styles/Skills.module.css'
 
 type SkillListType = {
 	heading: string
@@ -13,7 +14,7 @@ type PropsType = {
 
 const SkillList = ({ skillList, setMoreInfo }: PropsType) => {
 	return (
-		<div>
+		<div className={styles.skillList}>
 			<h3>{skillList.heading}</h3>
 			<ul>
 				{skillList.list.map((skill) => (

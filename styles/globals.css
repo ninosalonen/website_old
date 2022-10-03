@@ -23,13 +23,13 @@ body {
   --bg-light: #F9F7F5;
   --opacity: 0.85;
   --area-spacing: 6rem 1rem;
-  --p-font: calc(0.9rem + 0.6vw);
+  --p-font: calc(1rem + 0.5vw);
   background-color: var(--bg-dark);
   color: var(--primary-dark);
   font-family: 'Space Grotesk', sans-serif;
   overscroll-behavior: none;
   line-height: 1.5;
-  font-size: calc(1rem + 0.6vw);
+  font-size: calc(1rem + 0.5vw);
   text-align: center;
   position: relative;
 }

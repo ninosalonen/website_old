@@ -1,6 +1,6 @@
 .skills {
-  --list-width: 25rem;
-  --list-max-width: 80vw;
+  --list-width: calc(25rem + 10vw);
+  --button-max-width: 60vw;
   padding: var(--area-spacing);
   background-color: var(--bg-light);
 }
@@ -11,14 +11,18 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-top: 3rem;
-  gap: 3rem 5rem;
+  gap: 5rem 0rem;
+}
+
+.skillList {
+  width: var(--list-width)
 }
 
 .skill__button {
-  width: var(--list-width);
-  max-width: var(--list-max-width);
+  width: calc(var(--list-width) - 15rem);
+  max-width: var(--button-max-width);
   border-radius: var(--border-radius);
-  border: 2px solid var(--primary-dark);
+  border: 0.1rem solid var(--primary-dark);
   padding: 0.5rem;
   font-size: inherit;
   color: inherit;

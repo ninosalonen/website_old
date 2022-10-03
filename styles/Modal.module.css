@@ -17,8 +17,9 @@
 
   /*custom*/
   width: calc(145px + 40vw);
+  max-width: 95vw;
   border: 2px solid var(--primary-dark);
-  padding: 2.5rem 3rem;
+  padding: 3rem 1.5rem;
   word-wrap: break-word;
   z-index: 2;
 }
