@@ -10,7 +10,7 @@
   background-color: var(--bg-light);
 }
 
-.footer__text {
+.footer > p {
   margin: 0;
 }
 
