@@ -12,7 +12,7 @@ const Home: NextPage<CmsPropsType> = (props: CmsPropsType) => {
 				<title>Nino Salonen</title>
 				<meta
 					name="description"
-					content="Nino's portfolio site made using Next.js and Contentful CMS"
+					content="Nino's personal website"
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
