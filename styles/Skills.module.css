@@ -5,11 +5,6 @@
   background-color: var(--bg-light);
 }
 
-.skills__description {
-  font-size: var(--p-font);
-  opacity: var(--opacity);
-}
-
 .skills__lists {
   display: flex;
   flex-direction: row;

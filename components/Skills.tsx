@@ -20,7 +20,7 @@ const Skills = ({ aboutSkills, skillsLists, setMoreInfo }: PropsType) => {
 		<>
 			<div className={styles.skills}>
 				<h2>My skills</h2>
-				<p className={styles.skills__description}>{aboutSkills}</p>
+				<p>{aboutSkills}</p>
 				<div className={styles.skills__lists}>
 					{sortedSkillsLists.map((skillList) => (
 						<SkillList

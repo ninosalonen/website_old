@@ -18,11 +18,6 @@
   transition: transform 0.1s ease-in-out
 }
 
-.workCard__description {
-  font-size: var(--p-font);
-  opacity: var(--opacity);
-}
-
 .workCard.dark {
   color: var(--primary-light);
 }

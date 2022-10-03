@@ -20,7 +20,7 @@ const WorkCard = ({ item }: PropsType) => {
 			}`}
 		>
 			<h3>{item.title}</h3>
-			<p className={styles.workCard__description}>{item.description}</p>
+			<p>{item.description}</p>
 		</a>
 	)
 }

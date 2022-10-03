@@ -5,9 +5,7 @@ import FooterLink from './FooterLink'
 const Footer = () => {
 	return (
 		<footer className={styles.footer}>
-			<p className={styles.footer__text}>
-				Contact me: ninosalonen(at)gmail.com
-			</p>
+			<p>Contact me: ninosalonen(at)gmail.com</p>
 			<div className={styles.footer__svgContainer}>
 				<FooterLink
 					href="https://github.com/ninosalonen"

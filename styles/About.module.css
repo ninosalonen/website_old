@@ -17,11 +17,6 @@
   padding: var(--area-spacing);
 }
 
-.about__text > p {
-  opacity: var(--opacity);
-  font-size: var(--p-font);
-}
-
 @media screen and (min-width: 800px) {
   .about {
     grid-template-columns: 1fr 1fr;

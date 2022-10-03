@@ -61,6 +61,8 @@ a {
 p {
   max-width: 60rem;
   margin: 0 auto;
+  opacity: var(--opacity);
+  font-size: var(--p-font);
 }
 
 @media (prefers-reduced-motion: reduce) {
