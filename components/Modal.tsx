@@ -32,8 +32,8 @@ const Modal = ({ moreInfo, setMoreInfo }: PropsType) => {
 						<button className={styles.modal__x} onClick={() => setMoreInfo('')}>
 							✕
 						</button>
-						<h4>{moreInfo.split(',')[0]}</h4>
-						<p>{moreInfo.split(',')[1]}</p>
+						<h4>{moreInfo.split(':')[0]}</h4>
+						<p>{moreInfo.substring(moreInfo.indexOf(':') + 1)}</p>
 					</a>
 				</>
 			)}
