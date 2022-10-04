@@ -14,18 +14,18 @@
   margin: 0;
 }
 
-.footer__svgContainer {
+.footer__linkContainer {
   display: flex;
   flex-direction: row;
   gap: 3rem;
 }
 
-.svgLink {
+.linkContainer__link {
   transition: transform 0.1s ease-in-out;
   fill: var(--primary-light)
 }
 
-.svgLink:hover, .svgLink:focus {
+.linkContainer__link:hover, .linkContainer__link:focus {
   transform: scale(1.1);
 }
 

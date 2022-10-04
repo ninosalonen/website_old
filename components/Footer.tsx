@@ -6,7 +6,7 @@ const Footer = () => {
 	return (
 		<footer className={styles.footer}>
 			<p>Contact me: ninosalonen(at)gmail.com</p>
-			<div className={styles.footer__svgContainer}>
+			<div className={styles.footer__linkContainer}>
 				<FooterLink
 					href="https://github.com/ninosalonen"
 					ariaLabel="Link to Nino's Github page"

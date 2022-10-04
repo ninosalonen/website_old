@@ -5,7 +5,7 @@
   background-color: var(--bg-light);
 }
 
-.skills__lists {
+.skills__listsContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -14,7 +14,7 @@
   gap: 5rem 0rem;
 }
 
-.skillList {
+.listsContainer__list {
   width: var(--list-width)
 }
 
@@ -29,7 +29,7 @@
   transition: all 0.1s ease-in-out;
 }
 
-.skill:not(.skill:first-child) {
+.list__skill:not(.list__skill:first-child) {
   margin-top: 1rem
 }
 

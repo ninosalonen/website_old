@@ -21,9 +21,8 @@ body {
   --primary-light: white;
   --bg-dark: black;
   --bg-light: #F9F7F5;
-  --opacity: 0.85;
+  --opacity: 0.9;
   --area-spacing: 6rem 1rem;
-  --p-font: calc(1rem + 0.5vw);
   background-color: var(--bg-dark);
   color: var(--primary-dark);
   font-family: 'Space Grotesk', sans-serif;
@@ -62,7 +61,6 @@ p {
   max-width: 60rem;
   margin: 0 auto;
   opacity: var(--opacity);
-  font-size: var(--p-font);
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -13,7 +13,7 @@ const Work = ({ work, aboutWork }: PropsType) => {
 		<div className={styles.work}>
 			<h2>My projects</h2>
 			<p>{aboutWork}</p>
-			<div className={styles.work__cards}>
+			<div className={styles.work__cardsContainer}>
 				{work.map((item) => (
 					<WorkCard key={item.title} item={item} />
 				))}

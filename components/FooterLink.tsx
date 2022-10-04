@@ -10,7 +10,7 @@ type PropsType = {
 const FooterLink = (props: PropsType) => {
 	return (
 		<a
-			className={styles.svgLink}
+			className={styles.linkContainer__link}
 			href={props.href}
 			target={'_blank'}
 			aria-label={props.ariaLabel}

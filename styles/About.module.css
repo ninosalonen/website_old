@@ -7,13 +7,13 @@
   color: var(--primary-light);
 }
 
-.about__image {
+.about__imageWrapper {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-.about__text {
+.about__textWrapper {
   padding: var(--area-spacing);
 }
 
@@ -23,7 +23,7 @@
     max-height: 100vh;
     overflow: hidden;
   }
-  .about__text {
+  .about__textWrapper {
     padding: 0rem 3rem;
   }
 }

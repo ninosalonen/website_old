@@ -17,21 +17,19 @@ const Skills = ({ aboutSkills, skillsLists, setMoreInfo }: PropsType) => {
 	const sortedSkillsLists = useMemo(() => sortArray(skillsLists), [skillsLists])
 
 	return (
-		<>
-			<div className={styles.skills}>
-				<h2>My skills</h2>
-				<p>{aboutSkills}</p>
-				<div className={styles.skills__lists}>
-					{sortedSkillsLists.map((skillList) => (
-						<SkillList
-							setMoreInfo={setMoreInfo}
-							skillList={skillList}
-							key={skillList.heading}
-						/>
-					))}
-				</div>
+		<div className={styles.skills}>
+			<h2>My skills</h2>
+			<p>{aboutSkills}</p>
+			<div className={styles.skills__listsContainer}>
+				{sortedSkillsLists.map((skillList) => (
+					<SkillList
+						setMoreInfo={setMoreInfo}
+						skillList={skillList}
+						key={skillList.heading}
+					/>
+				))}
 			</div>
-		</>
+		</div>
 	)
 }
 

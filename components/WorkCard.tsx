@@ -9,15 +9,15 @@ type PropsType = {
 const WorkCard = ({ item }: PropsType) => {
 	return (
 		<a
+			className={`${styles.cardsContainer__card} ${
+				item.isDark ? styles.dark : styles.light
+			}`}
 			href={item.link}
 			target={'_blank'}
 			aria-label={`Link to ${item.title}`}
 			rel="noreferrer"
 			key={item.title}
 			style={{ background: item.color }}
-			className={`${styles.workCard} ${
-				item.isDark ? styles.dark : styles.light
-			}`}
 		>
 			<h3>{item.title}</h3>
 			<p>{item.description}</p>

@@ -28,8 +28,11 @@ const Modal = ({ moreInfo, setMoreInfo }: PropsType) => {
 						onClick={() => setMoreInfo('')}
 					></div>
 					<a className={styles.modal__content}>
-						<button className={styles.modal__focus} ref={ref}></button>
-						<button className={styles.modal__x} onClick={() => setMoreInfo('')}>
+						<button className={styles.content__focusBtn} ref={ref}></button>
+						<button
+							className={styles.content__closeBtn}
+							onClick={() => setMoreInfo('')}
+						>
 							✕
 						</button>
 						<h4>{moreInfo.split(':')[0]}</h4>

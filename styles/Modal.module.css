@@ -1,4 +1,4 @@
-.modal__backdrop{
+.modal__backdrop {
   position: absolute;
   background-color: black;
   opacity: 0.9;
@@ -14,8 +14,6 @@
   transform: translate(-50%, -50%);
   background-color: var(--bg-light);
   border-radius: var(--border-radius);
-
-  /*custom*/
   width: calc(145px + 40vw);
   max-width: 95vw;
   border: 2px solid var(--primary-dark);
@@ -29,19 +27,19 @@
   margin-bottom: 0.5rem;
 }
 
-.modal__x, .modal__focus {
+.content__closeBtn, .content__focusBtn {
   padding: 0;
   position: absolute;
   width: min-content;
 }
 
-.modal__x {
+.content__closeBtn {
   top: 1rem;
   right: 1rem;
   color: var(--primary-dark);
   font-size: 1.5rem;
 }
 
-.modal__x:hover {
+.content__closeBtn:hover {
   cursor: pointer;
 }

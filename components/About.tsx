@@ -18,7 +18,7 @@ const myLoader = ({ src }: LoaderProps) => {
 const About = ({ about }: PropsType) => {
 	return (
 		<div className={styles.about}>
-			<div className={styles.about__image}>
+			<div className={styles.about__imageWrapper}>
 				<Image
 					src={about.avatar.fields.file.url}
 					alt=""
@@ -28,7 +28,7 @@ const About = ({ about }: PropsType) => {
 					priority={true}
 				/>
 			</div>
-			<div className={styles.about__text}>
+			<div className={styles.about__textWrapper}>
 				<h1>About me</h1>
 				<p>{about.aboutMe}</p>
 			</div>

@@ -11,7 +11,7 @@ const SkillItem = ({ skill, setMoreInfo }: PropsType) => {
 	const info = skill.substring(skill.indexOf(':') + 1)
 
 	return (
-		<li className={styles.skill}>
+		<li className={styles.list__skill}>
 			<button
 				className={styles.skill__button}
 				onClick={() => {
