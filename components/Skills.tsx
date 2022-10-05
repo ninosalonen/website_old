@@ -6,14 +6,14 @@ import SkillList from './SkillList'
 type PropsType = {
 	aboutSkills: string
 	skillsLists: SkillsType[]
-	setMoreInfo: React.Dispatch<React.SetStateAction<string>>
+	setModalText: React.Dispatch<React.SetStateAction<string>>
 }
 
 const sortArray = (array: SkillsType[]) => {
 	return array.sort((a, b) => a.order - b.order)
 }
 
-const Skills = ({ aboutSkills, skillsLists, setMoreInfo }: PropsType) => {
+const Skills = ({ aboutSkills, skillsLists, setModalText }: PropsType) => {
 	const sortedSkillsLists = useMemo(() => sortArray(skillsLists), [skillsLists])
 
 	return (
@@ -23,7 +23,7 @@ const Skills = ({ aboutSkills, skillsLists, setMoreInfo }: PropsType) => {
 			<div className={styles.skills__listsContainer}>
 				{sortedSkillsLists.map((skillList) => (
 					<SkillList
-						setMoreInfo={setMoreInfo}
+						setModalText={setModalText}
 						skillList={skillList}
 						key={skillList.heading}
 					/>

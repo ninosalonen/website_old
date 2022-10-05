@@ -7,15 +7,15 @@ import Footer from './Footer'
 import Modal from './Modal'
 
 const Main = (props: CmsPropsType) => {
-	const [moreInfo, setMoreInfo] = useState('')
+	const [modalText, setModalText] = useState('')
 	return (
 		<>
-			<Modal moreInfo={moreInfo} setMoreInfo={setMoreInfo} />
+			<Modal moreInfo={modalText} setModalText={setModalText} />
 
 			<main>
 				<About about={props.about} />
 				<Skills
-					setMoreInfo={setMoreInfo}
+					setModalText={setModalText}
 					aboutSkills={props.about.aboutSkills}
 					skillsLists={props.skills}
 				/>

@@ -1,20 +1,36 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import styles from '../styles/Modal.module.css'
 
 type PropsType = {
 	moreInfo: string
-	setMoreInfo: React.Dispatch<React.SetStateAction<string>>
+	setModalText: React.Dispatch<React.SetStateAction<string>>
 }
 
-const Modal = ({ moreInfo, setMoreInfo }: PropsType) => {
+const Modal = ({ moreInfo, setModalText }: PropsType) => {
 	const ref = useRef<HTMLButtonElement>(null)
 
+	const [reverse, setReverse] = useState(false)
+	const [key, setKey] = useState(1)
+
+	const modalExit = () => {
+		setReverse(true)
+		setKey(key + 1)
+		setTimeout(() => {
+			setModalText('')
+		}, 300)
+	}
+
 	useEffect(() => {
+		setReverse(false)
 		ref.current?.focus()
+		const showingModal = moreInfo.length > 0
 
 		const onScroll = () => {
-			if (moreInfo.length > 0) setMoreInfo('')
+			if (showingModal) {
+				modalExit()
+			}
 		}
+
 		window.addEventListener('scroll', onScroll, { passive: true })
 		return () => window.removeEventListener('scroll', onScroll)
 	}, [moreInfo])
@@ -24,20 +40,25 @@ const Modal = ({ moreInfo, setMoreInfo }: PropsType) => {
 			{moreInfo.length > 0 && (
 				<>
 					<div
-						className={styles.modal__backdrop}
-						onClick={() => setMoreInfo('')}
+						key={key + 1}
+						className={`${styles.modal__backdrop} ${
+							reverse ? styles.reverseAnimation : ''
+						}`}
+						onClick={modalExit}
 					></div>
-					<a className={styles.modal__content}>
+					<div
+						key={key}
+						className={`${styles.modal__content} ${
+							reverse ? styles.reverseAnimation : ''
+						}`}
+					>
 						<button className={styles.content__focusBtn} ref={ref}></button>
-						<button
-							className={styles.content__closeBtn}
-							onClick={() => setMoreInfo('')}
-						>
+						<button className={styles.content__closeBtn} onClick={modalExit}>
 							✕
 						</button>
 						<h4>{moreInfo.split(':')[0]}</h4>
 						<p>{moreInfo.substring(moreInfo.indexOf(':') + 1)}</p>
-					</a>
+					</div>
 				</>
 			)}
 		</>

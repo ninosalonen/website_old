@@ -3,10 +3,10 @@ import styles from '../styles/Skills.module.css'
 
 type PropsType = {
 	skill: string
-	setMoreInfo: React.Dispatch<React.SetStateAction<string>>
+	setModalText: React.Dispatch<React.SetStateAction<string>>
 }
 
-const SkillItem = ({ skill, setMoreInfo }: PropsType) => {
+const SkillItem = ({ skill, setModalText }: PropsType) => {
 	const heading = skill.split(':')[0]
 	const info = skill.substring(skill.indexOf(':') + 1)
 
@@ -15,7 +15,7 @@ const SkillItem = ({ skill, setMoreInfo }: PropsType) => {
 			<button
 				className={styles.skill__button}
 				onClick={() => {
-					setMoreInfo(heading + ':' + info)
+					setModalText(heading + ':' + info)
 				}}
 			>
 				<h4>{heading}</h4>

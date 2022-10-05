@@ -9,17 +9,17 @@ type SkillListType = {
 
 type PropsType = {
 	skillList: SkillListType
-	setMoreInfo: React.Dispatch<React.SetStateAction<string>>
+	setModalText: React.Dispatch<React.SetStateAction<string>>
 }
 
-const SkillList = ({ skillList, setMoreInfo }: PropsType) => {
+const SkillList = ({ skillList, setModalText }: PropsType) => {
 	return (
 		<div className={styles.listsContainer__list}>
 			<h3>{skillList.heading}</h3>
 			<ul>
 				{skillList.list.map((skill) => (
 					<SkillItem
-						setMoreInfo={setMoreInfo}
+						setModalText={setModalText}
 						skill={skill}
 						key={skill.split(',')[0]}
 					/>

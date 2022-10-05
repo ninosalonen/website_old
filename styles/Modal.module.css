@@ -1,10 +1,10 @@
 .modal__backdrop {
   position: absolute;
-  background-color: black;
-  opacity: 0.9;
+  background-color: rgba(0, 0, 0, 0.9);
   height: 100%;
   width: 100%;
   z-index: 1;
+  animation: show-backdrop 300ms ease-out;
 }
 
 .modal__content {
@@ -18,8 +18,12 @@
   max-width: 95vw;
   border: 2px solid var(--primary-dark);
   padding: 3rem 1.5rem;
-  word-wrap: break-word;
   z-index: 2;
+  animation: show-content 300ms ease-out;
+}
+
+.reverseAnimation {
+  animation-direction: reverse;
 }
 
 .modal__content > h4 {
@@ -42,4 +46,27 @@
 
 .content__closeBtn:hover {
   cursor: pointer;
+}
+
+@keyframes show-content {
+  0% {
+    transform: translate(-50%, -25%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+@keyframes show-backdrop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
