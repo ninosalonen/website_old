@@ -3,6 +3,7 @@
   --button-max-width: 60vw;
   padding: var(--area-spacing);
   background-color: var(--bg-light);
+  box-shadow: inset 0px 80px 30px -80px #000000, inset 0px -80px 30px -80px #000000;
 }
 
 .skills__listsContainer {
