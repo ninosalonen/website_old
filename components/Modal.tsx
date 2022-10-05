@@ -8,7 +8,6 @@ type PropsType = {
 
 const Modal = ({ moreInfo, setModalText }: PropsType) => {
 	const ref = useRef<HTMLButtonElement>(null)
-
 	const [reverse, setReverse] = useState(false)
 	const [key, setKey] = useState(1)
 
