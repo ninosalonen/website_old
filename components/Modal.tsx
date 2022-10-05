@@ -16,7 +16,7 @@ const Modal = ({ moreInfo, setModalText }: PropsType) => {
 		setKey(key + 1)
 		setTimeout(() => {
 			setModalText('')
-		}, 300)
+		}, 290)
 	}
 
 	useEffect(() => {
