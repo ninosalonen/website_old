@@ -17,7 +17,7 @@ const myLoader = ({ src }: LoaderProps) => {
 
 const About = ({ about }: PropsType) => {
 	return (
-		<div className={styles.about}>
+		<section className={styles.about}>
 			<div className={styles.about__imageWrapper}>
 				<Image
 					src={about.avatar.fields.file.url}
@@ -32,7 +32,7 @@ const About = ({ about }: PropsType) => {
 				<h1>About me</h1>
 				<p>{about.aboutMe}</p>
 			</div>
-		</div>
+		</section>
 	)
 }
 

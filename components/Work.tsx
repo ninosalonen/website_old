@@ -10,7 +10,7 @@ type PropsType = {
 
 const Work = ({ work, aboutWork }: PropsType) => {
 	return (
-		<div className={styles.work}>
+		<section className={styles.work}>
 			<h2>My projects</h2>
 			<p>{aboutWork}</p>
 			<div className={styles.work__cardsContainer}>
@@ -18,7 +18,7 @@ const Work = ({ work, aboutWork }: PropsType) => {
 					<WorkCard key={item.title} item={item} />
 				))}
 			</div>
-		</div>
+		</section>
 	)
 }
 

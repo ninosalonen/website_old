@@ -17,7 +17,7 @@ const Skills = ({ aboutSkills, skillsLists, setModalText }: PropsType) => {
 	const sortedSkillsLists = useMemo(() => sortArray(skillsLists), [skillsLists])
 
 	return (
-		<div className={styles.skills}>
+		<section className={styles.skills}>
 			<h2>My skills</h2>
 			<p>{aboutSkills}</p>
 			<div className={styles.skills__listsContainer}>
@@ -29,7 +29,7 @@ const Skills = ({ aboutSkills, skillsLists, setModalText }: PropsType) => {
 					/>
 				))}
 			</div>
-		</div>
+		</section>
 	)
 }
 
