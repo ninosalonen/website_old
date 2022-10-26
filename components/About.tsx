@@ -21,10 +21,10 @@ const About = ({ about }: PropsType) => {
 			<div className={styles.about__imageWrapper}>
 				<Image
 					src={about.avatar.fields.file.url}
-					alt=""
+					alt="Nino"
 					loader={myLoader}
-					layout="fill"
-					objectFit="cover"
+					fill
+					style={{ objectFit: 'cover' }}
 					priority={true}
 				/>
 			</div>
